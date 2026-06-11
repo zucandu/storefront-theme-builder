@@ -1,0 +1,26 @@
+{
+  "menu": {
+    "id": 3,
+    "type": "footer-middle",
+    "items": [
+      {
+        "id": 301, "sort": 1, "link_type": "custom",
+        "translations": [{ "locale": "en", "label": "Shop" }],
+        "children": [
+          { "id": 311, "sort": 1, "link_type": "category", "slug": "furniture", "translations": [{ "locale": "en", "label": "Furniture" }], "children": [] },
+          { "id": 312, "sort": 2, "link_type": "category", "slug": "lighting", "translations": [{ "locale": "en", "label": "Lighting" }], "children": [] },
+          { "id": 313, "sort": 3, "link_type": "category", "slug": "outdoor", "translations": [{ "locale": "en", "label": "Outdoor" }], "children": [] }
+        ]
+      },
+      {
+        "id": 302, "sort": 2, "link_type": "custom",
+        "translations": [{ "locale": "en", "label": "Help" }],
+        "children": [
+          { "id": 321, "sort": 1, "link_type": "contact", "slug": "contact-us", "translations": [{ "locale": "en", "label": "Contact Us" }], "children": [] },
+          { "id": 322, "sort": 2, "link_type": "page", "slug": "faq", "translations": [{ "locale": "en", "label": "FAQ" }], "children": [] },
+          { "id": 323, "sort": 3, "link_type": "page", "slug": "shipping-info", "translations": [{ "locale": "en", "label": "Shipping Info" }], "children": [] }
+        ]
+      }
+    ]
+  }
+}

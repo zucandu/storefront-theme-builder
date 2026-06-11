@@ -1,14 +1,23 @@
 import { defineStore } from 'pinia';
-import mockMenuMain from '@/data/menu-main.json';
-import mockMenuFooter from '@/data/menu-footer.json';
+import mockMenuPrimary from '@/data/menu-primary.json';
+import mockMenuTertiary from '@/data/menu-tertiary.json';
+import mockMenuFooterMiddle from '@/data/menu-footer-middle.json';
+import mockMenuFooterBottom from '@/data/menu-footer-bottom.json';
+
+const menuMap = {
+    primary: mockMenuPrimary.menu,
+    main: mockMenuPrimary.menu,
+    tertiary: mockMenuTertiary.menu,
+    'footer-middle': mockMenuFooterMiddle.menu,
+    'footer-bottom': mockMenuFooterBottom.menu,
+    footer: mockMenuFooterMiddle.menu,
+};
 
 export const useMenuStore = defineStore('menu', {
     state: () => ({ menu: {} }),
     actions: {
         async fetchMenuByType(type) {
-            if (type === 'main') return mockMenuMain.menu;
-            if (type === 'footer') return mockMenuFooter.menu;
-            return null;
+            return menuMap[type] || null;
         },
     },
 });

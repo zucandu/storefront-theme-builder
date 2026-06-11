@@ -2,27 +2,12 @@ import './themes/default/storefront/css/style.css';
 
 import { createApp } from 'vue';
 import { createPinia } from 'pinia';
-import Storefront from './themes/default/Storefront.vue';
+import App from './App.vue';
 
 const pinia = createPinia();
-const app = createApp(Storefront);
+const app = createApp(App);
 
-// ── Mock zucConfig (replaces Laravel Blade injection) ─────────────────
-window.zucConfig = {
-    store_name: 'Demo Store',
-    store_url: 'http://localhost:5173',
-    default_currency: 'USD',
-    default_language: 'en',
-    product_price_with_tax: 'n',
-    enable_wishlist: 'y',
-    enable_blog: 'y',
-    enable_reviews: 'y',
-    enable_registration: 'y',
-    maintenance_mode: 'n',
-    google_tag_manager_id: '',
-    facebook_pixel_id: '',
-    recaptcha_site_key: '',
-};
+// zucConfig is defined in index.html before this module loads
 app.config.globalProperties.zucConfig = window.zucConfig;
 
 // ── Global components (SSR meta stubs) ────────────────────────────────

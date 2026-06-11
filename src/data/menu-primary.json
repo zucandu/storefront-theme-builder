@@ -1,0 +1,32 @@
+{
+  "menu": {
+    "id": 1,
+    "type": "primary",
+    "items": [
+      {
+        "id": 1, "sort": 1, "link_type": "category", "slug": "furniture",
+        "translations": [{ "locale": "en", "label": "Furniture" }],
+        "children": [
+          { "id": 11, "sort": 1, "link_type": "category", "slug": "chairs", "translations": [{ "locale": "en", "label": "Chairs" }], "children": [] },
+          { "id": 12, "sort": 2, "link_type": "category", "slug": "sofas", "translations": [{ "locale": "en", "label": "Sofas" }], "children": [] },
+          { "id": 13, "sort": 3, "link_type": "category", "slug": "tables", "translations": [{ "locale": "en", "label": "Tables" }], "children": [] }
+        ]
+      },
+      {
+        "id": 2, "sort": 2, "link_type": "category", "slug": "lighting",
+        "translations": [{ "locale": "en", "label": "Lighting" }],
+        "children": []
+      },
+      {
+        "id": 3, "sort": 3, "link_type": "category", "slug": "outdoor",
+        "translations": [{ "locale": "en", "label": "Outdoor" }],
+        "children": []
+      },
+      {
+        "id": 4, "sort": 4, "link_type": "category", "slug": "decor",
+        "translations": [{ "locale": "en", "label": "Decor" }],
+        "children": []
+      }
+    ]
+  }
+}
