@@ -645,7 +645,7 @@ const storeName = zucConfig.store_name || 'Store'
 
                                             <MultiLevelDropdownMenu
                                                 v-else
-                                                :elements="item.blocks?.flatMap(block => block.elements) || []"
+                                                :elements="item.blocks?.flatMap(block => block.elements) || item.children || []"
                                                 :panel-padding="12"
                                                 @navigate="navigateToElement"
                                             />

@@ -90,22 +90,39 @@
   },
   "spotlight": [
     {
-      "id": 2, "slug": "modern-desk-lamp", "name": "Modern Desk Lamp",
+      "id": 2, "slug": "modern-desk-lamp", "type": "simple",
       "price": "45.00", "sale_price": "0", "tax_class_id": 0,
-      "image": "/storage/products/lamp.jpg", "status": 1,
+      "quantity": 12, "status": 1, "rating": 4, "total_reviews": 8,
+      "images": [{ "id": 1, "src": "products/lamp.webp" }],
       "translations": [{ "locale": "en", "name": "Modern Desk Lamp", "slug": "modern-desk-lamp" }]
     },
     {
-      "id": 3, "slug": "leather-sofa", "name": "Premium Leather Sofa",
+      "id": 3, "slug": "leather-sofa", "type": "simple",
       "price": "1299.00", "sale_price": "999.00", "tax_class_id": 1,
-      "image": "/storage/products/sofa.jpg", "status": 1,
+      "quantity": 5, "status": 1, "rating": 5, "total_reviews": 24,
+      "images": [{ "id": 2, "src": "products/sofa.webp" }],
       "translations": [{ "locale": "en", "name": "Premium Leather Sofa", "slug": "leather-sofa" }]
     },
     {
-      "id": 4, "slug": "bamboo-coffee-table", "name": "Bamboo Coffee Table",
+      "id": 4, "slug": "bamboo-coffee-table", "type": "simple",
       "price": "249.00", "sale_price": "0", "tax_class_id": 1,
-      "image": "/storage/products/table.jpg", "status": 1,
+      "quantity": 20, "status": 1, "rating": 4, "total_reviews": 11,
+      "images": [{ "id": 3, "src": "products/table.webp" }],
       "translations": [{ "locale": "en", "name": "Bamboo Coffee Table", "slug": "bamboo-coffee-table" }]
+    },
+    {
+      "id": 5, "slug": "classic-wooden-chair", "type": "simple",
+      "price": "89.99", "sale_price": "69.99", "tax_class_id": 1,
+      "quantity": 15, "status": 1, "rating": 5, "total_reviews": 12,
+      "images": [{ "id": 4, "src": "products/chair.webp" }],
+      "translations": [{ "locale": "en", "name": "Classic Wooden Chair", "slug": "classic-wooden-chair" }]
+    },
+    {
+      "id": 6, "slug": "pendant-light", "type": "simple",
+      "price": "129.00", "sale_price": "99.00", "tax_class_id": 0,
+      "quantity": 8, "status": 1, "rating": 4, "total_reviews": 6,
+      "images": [{ "id": 5, "src": "products/light.webp" }],
+      "translations": [{ "locale": "en", "name": "Pendant Light", "slug": "pendant-light" }]
     }
   ],
   "cross_sells": [],

@@ -1,8 +1,8 @@
 ﻿{
   "banners": [
-    { "id": 1, "type": "slideshow", "group": "slideshow", "image": "/storage/banners/hero-1.jpg", "mobile_image": "/storage/banners/hero-1-mobile.jpg", "link": "/category/furniture", "sort": 1, "translations": [{ "locale": "en", "title": "New Arrivals", "subtitle": "Discover the latest in home furnishings", "button_text": "Shop Now" }] },
-    { "id": 2, "type": "slideshow", "group": "slideshow", "image": "/storage/banners/hero-2.jpg", "mobile_image": "/storage/banners/hero-2-mobile.jpg", "link": "/category/lighting", "sort": 2, "translations": [{ "locale": "en", "title": "Summer Sale", "subtitle": "Up to 40% off selected items", "button_text": "View Deals" }] },
-    { "id": 3, "type": "featured", "group": "featured", "image": "/storage/banners/promo-1.jpg", "link": "/category/sofas", "sort": 1, "translations": [{ "locale": "en", "title": "Living Room Essentials", "subtitle": "", "button_text": "Shop Now" }] },
-    { "id": 4, "type": "featured", "group": "featured", "image": "/storage/banners/promo-2.jpg", "link": "/category/outdoor", "sort": 2, "translations": [{ "locale": "en", "title": "Outdoor Collection", "subtitle": "", "button_text": "Explore" }] }
+    { "id": 1, "type": "slideshow", "group": "slideshow", "image": "banners/hero-1.webp", "mobile_image": "banners/hero-1.webp", "link": "/category/furniture", "sort": 1, "translations": [{ "locale": "en", "title": "New Arrivals", "subtitle": "Discover the latest in home furnishings", "button_text": "Shop Now" }] },
+    { "id": 2, "type": "slideshow", "group": "slideshow", "image": "banners/hero-2.webp", "mobile_image": "banners/hero-2.webp", "link": "/category/lighting", "sort": 2, "translations": [{ "locale": "en", "title": "Summer Sale", "subtitle": "Up to 40% off selected items", "button_text": "View Deals" }] },
+    { "id": 3, "type": "featured", "group": "featured", "image": "banners/hero-1.webp", "link": "/category/sofas", "sort": 1, "translations": [{ "locale": "en", "title": "Living Room Essentials", "subtitle": "", "button_text": "Shop Now" }] },
+    { "id": 4, "type": "featured", "group": "featured", "image": "banners/hero-2.webp", "link": "/category/outdoor", "sort": 2, "translations": [{ "locale": "en", "title": "Outdoor Collection", "subtitle": "", "button_text": "Explore" }] }
   ]
 }
