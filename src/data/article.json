@@ -1,0 +1,22 @@
+{
+  "article": {
+    "id": 1,
+    "slug": "how-to-choose-the-perfect-sofa",
+    "image": "/storage/blog/sofa-guide.jpg",
+    "author": { "id": 1, "name": "Emma Wilson", "slug": "emma-wilson", "avatar": "/storage/avatars/emma.jpg" },
+    "categories": [{ "id": 1, "slug": "buying-guides", "translations": [{ "locale": "en", "name": "Buying Guides" }] }],
+    "published_at": "2025-10-15T09:00:00Z",
+    "reading_time": 5,
+    "translations": [
+      {
+        "locale": "en",
+        "title": "How to Choose the Perfect Sofa for Your Living Room",
+        "slug": "how-to-choose-the-perfect-sofa",
+        "excerpt": "Finding the right sofa involves more than just picking a colour. Here's our complete guide.",
+        "content": "<p>The sofa is often the centrepiece of a living room. When choosing one, consider the size of your room, the existing colour palette, and how you actually use the space.</p><p>Material matters too: leather is durable and easy to clean, while fabric offers more texture and warmth. Whatever you choose, sit in it first — comfort is non-negotiable.</p>",
+        "meta_title": "How to Choose a Sofa | Demo Blog",
+        "meta_description": "Complete guide to choosing the right sofa."
+      }
+    ]
+  }
+}

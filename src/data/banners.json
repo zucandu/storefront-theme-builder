@@ -1,0 +1,56 @@
+{
+  "banners": [
+    {
+      "id": 1,
+      "type": "slideshow",
+      "image": "/storage/banners/hero-1.jpg",
+      "mobile_image": "/storage/banners/hero-1-mobile.jpg",
+      "link": "/category/furniture",
+      "sort": 1,
+      "translations": [
+        {
+          "locale": "en",
+          "title": "New Arrivals",
+          "subtitle": "Discover the latest in home furnishings",
+          "button_text": "Shop Now"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "slideshow",
+      "image": "/storage/banners/hero-2.jpg",
+      "mobile_image": "/storage/banners/hero-2-mobile.jpg",
+      "link": "/category/lighting",
+      "sort": 2,
+      "translations": [
+        {
+          "locale": "en",
+          "title": "Summer Sale",
+          "subtitle": "Up to 40% off selected items",
+          "button_text": "View Deals"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "featured",
+      "image": "/storage/banners/promo-1.jpg",
+      "link": "/category/sofas",
+      "sort": 1,
+      "translations": [
+        { "locale": "en", "title": "Living Room Essentials", "subtitle": "", "button_text": "Shop Now" }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "featured",
+      "image": "/storage/banners/promo-2.jpg",
+      "link": "/category/outdoor",
+      "sort": 2,
+      "translations": [
+        { "locale": "en", "title": "Outdoor Collection", "subtitle": "", "button_text": "Explore" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "Dashboard": "Dashboard",
+  "There is no any product today": "There are no products today",
+  "Manager Account" : "Manage Your Account",
+  "ranges": "Price Range",
+  "categories": "Category",
+  "manufacturers": "Manufacturer",
+  "ratings": "Rating",
+  "4-Excellent": "Excellent & Up",
+  "3-Good": "Good & Up",
+  "2-Average": "Average & Up",
+  "1-Bad": "Bad & Up",
+  "Flat Rate": "Flat rate shipping (Tracking available)",
+  "gc_email_to": "Email to",
+  "gc_message": "Message",
+  "gc_receiver_name": "Recipient name",
+  "cart": {
+    "itemAdded": "{name} has been added to your cart."
+  },
+  "listing": {
+    "paginationProduct": "Showing {from} to {to} of {total} products",
+    "paginationArticle": "Showing {from} to {to} of {total} articles"
+  },
+  "Theme editor locked": "Theme editor locked",
+  "Multiple security violations detected in the last hour.": "Multiple security violations detected in the last hour.",
+  "Unlocks in:": "Unlocks in:",
+  "You can still browse your theme files (read-only). Need to unlock sooner? Email": "You can still browse your theme files (read-only). Need to unlock sooner? Email",
+  "Security check — this is your": "Security check — this is your",
+  "blocked save": "blocked save",
+  "The code you tried to save triggers a security rule that blocks common stored-XSS techniques.": "The code you tried to save triggers a security rule that blocks common stored-XSS techniques.",
+  "If you are writing legitimate code:": "If you are writing legitimate code:",
+  "within an hour will lock the editor for 24 hours.": "within an hour will lock the editor for 24 hours.",
+  "Editor locked due to repeated security violations.": "Editor locked due to repeated security violations.",
+  "Got it": "Got it"
+}

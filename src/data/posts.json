@@ -1,0 +1,70 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "slug": "how-to-choose-the-perfect-sofa",
+      "image": "/storage/blog/sofa-guide.jpg",
+      "author": { "id": 1, "name": "Emma Wilson", "slug": "emma-wilson", "avatar": "/storage/avatars/emma.jpg" },
+      "categories": [{ "id": 1, "slug": "buying-guides", "translations": [{ "locale": "en", "name": "Buying Guides" }] }],
+      "published_at": "2025-10-15T09:00:00Z",
+      "reading_time": 5,
+      "translations": [
+        {
+          "locale": "en",
+          "title": "How to Choose the Perfect Sofa for Your Living Room",
+          "slug": "how-to-choose-the-perfect-sofa",
+          "excerpt": "Finding the right sofa involves more than just picking a colour. Here's our complete guide.",
+          "content": "<p>The sofa is often the centrepiece of a living room. When choosing one, consider the size of your room, the existing colour palette, and how you actually use the space. A sectional might be perfect for a family room but overwhelming in a smaller apartment.</p><p>Material matters too: leather is durable and easy to clean, while fabric offers more texture and warmth. Velvet is on-trend but requires more care. Whatever you choose, sit in it first — comfort is non-negotiable.</p>",
+          "meta_title": "How to Choose a Sofa | Demo Blog",
+          "meta_description": "Complete guide to choosing the right sofa."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "2025-interior-design-trends",
+      "image": "/storage/blog/trends-2025.jpg",
+      "author": { "id": 2, "name": "Alex Chen", "slug": "alex-chen", "avatar": "/storage/avatars/alex.jpg" },
+      "categories": [{ "id": 2, "slug": "design-tips", "translations": [{ "locale": "en", "name": "Design Tips" }] }],
+      "published_at": "2025-11-01T08:00:00Z",
+      "reading_time": 7,
+      "translations": [
+        {
+          "locale": "en",
+          "title": "Interior Design Trends for 2025",
+          "slug": "2025-interior-design-trends",
+          "excerpt": "From earthy palettes to maximalist accents — here's what's trending.",
+          "content": "<p>Interior design in 2025 is all about bringing the outdoors in. Earthy tones like terracotta, sage green, and warm beige dominate palettes. Natural materials — rattan, bamboo, linen — are everywhere.</p><p>On the other end of the spectrum, maximalism is making a comeback. Layered textures, bold patterns, and curated collections of objects are replacing the stark minimalism of the previous decade. The key is intention: each piece should tell a story.</p>",
+          "meta_title": "Interior Design Trends 2025",
+          "meta_description": "Discover the top interior design trends for 2025."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "caring-for-wooden-furniture",
+      "image": "/storage/blog/wood-care.jpg",
+      "author": { "id": 1, "name": "Emma Wilson", "slug": "emma-wilson", "avatar": "/storage/avatars/emma.jpg" },
+      "categories": [{ "id": 3, "slug": "care-guides", "translations": [{ "locale": "en", "name": "Care Guides" }] }],
+      "published_at": "2025-12-01T10:00:00Z",
+      "reading_time": 4,
+      "translations": [
+        {
+          "locale": "en",
+          "title": "How to Care for Wooden Furniture",
+          "slug": "caring-for-wooden-furniture",
+          "excerpt": "Wooden furniture can last a lifetime with the right care. Here's how.",
+          "content": "<p>Wooden furniture is an investment that rewards proper care. Dust regularly with a soft, dry cloth, and avoid harsh chemical cleaners that strip the finish.</p><p>For deeper cleaning, use a slightly damp cloth followed by a dry one. Polish every few months with a product suited to your wood's finish. Keep furniture away from direct sunlight and heat sources, which cause warping and fading over time.</p>",
+          "meta_title": "Wooden Furniture Care Guide | Demo Blog",
+          "meta_description": "Learn how to properly care for wooden furniture."
+        }
+      ]
+    }
+  ],
+  "pagination": {
+    "total": 12,
+    "per_page": 6,
+    "current_page": 1,
+    "last_page": 2
+  }
+}
