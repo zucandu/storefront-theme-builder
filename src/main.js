@@ -10,7 +10,11 @@ const app = createApp(App);
 // zucConfig is defined in index.html before this module loads
 app.config.globalProperties.zucConfig = window.zucConfig;
 
-// ── Global components (SSR meta stubs) ────────────────────────────────
+// ── Global components ─────────────────────────────────────────────────
+import PriceConverter from '@/components/PriceConverter.vue';
+import LocalizedLink  from '@/components/LocalizedLink.vue';
+app.component('PriceConverter', PriceConverter);
+app.component('LocalizedLink',  LocalizedLink);
 app.component('Head', { template: '<span></span>' });
 app.component('Meta', { template: '<span></span>' });
 
