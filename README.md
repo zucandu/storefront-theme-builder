@@ -1,87 +1,87 @@
 # Storefront Theme Builder
 
-Môi trường phát triển độc lập để thiết kế và xem trước theme storefront của Zucandu — **không cần Laravel, không cần backend, không cần database**.
+A standalone development environment for designing and previewing Zucandu storefront themes — **no Laravel, no backend, no database required**.
 
-Toàn bộ dữ liệu lấy từ các file JSON tĩnh trong `src/data/`. Theme components copy nguyên từ v3; chỉ có Pinia stores và bootstrap được viết lại để dùng mock data thay vì gọi API thật.
+All data comes from static JSON fixtures in `src/data/`. Theme components are copied as-is from v3; only the Pinia stores and bootstrap are rewritten to use mock data instead of real API calls.
 
 ---
 
 ## Stack
 
 - **Vite 8** + **Vue 3** (Composition API, `<script setup>`)
-- **Pinia 3** — stores
+- **Pinia 3** — state management
 - **Vue Router 5** — routing
 - **Tailwind CSS v4** — styling
-- **vue-i18n 11** — i18n
+- **vue-i18n 11** — internationalization
 
 ---
 
-## Cài đặt & chạy
+## Setup & Running
 
-> Dùng **pnpm** (npm không hỗ trợ `workspace:` protocol của một số package).
+> Use **pnpm** — some packages use the `workspace:` protocol which npm does not support.
 
 ```bash
-# Cài pnpm nếu chưa có
+# Install pnpm if you don't have it
 npm install -g pnpm
 
-# Cài dependencies
+# Install dependencies
 pnpm install
 
-# Khởi động dev server
+# Start the dev server
 pnpm dev
 # → http://localhost:5173
 
-# Build production
+# Production build
 pnpm build
 ```
 
 ---
 
-## Các trang có thể preview
+## Pages to Preview
 
-| URL | Trang |
-|-----|-------|
+| URL | Page |
+|-----|------|
 | `/` | Homepage |
-| `/category/furniture` | Danh mục sản phẩm |
-| `/product/classic-wooden-chair` | Chi tiết sản phẩm |
-| `/cart` | Giỏ hàng |
-| `/checkout` | Thanh toán |
-| `/login` | Đăng nhập |
-| `/register` | Đăng ký |
-| `/account/order/list` | Tài khoản (cần login trước) |
+| `/category/furniture` | Category listing |
+| `/product/classic-wooden-chair` | Product detail |
+| `/cart` | Shopping cart |
+| `/checkout` | Checkout |
+| `/login` | Login |
+| `/register` | Register |
+| `/account/order/list` | Account (login first) |
 | `/blog/listing` | Blog |
-| `/search/result?keyword=chair` | Kết quả tìm kiếm |
-| `/track-order/form` | Tra cứu đơn hàng |
-| `/return-exchange/form` | Trả/đổi hàng |
+| `/search/result?keyword=chair` | Search results |
+| `/track-order/form` | Order tracking |
+| `/return-exchange/form` | Return & exchange |
 
 ---
 
 ## Dev Panel
 
-Góc dưới phải có nút **⚙** để mở Dev Panel (chỉ hiện ở môi trường dev):
+A **⚙** button in the bottom-right corner opens the Dev Panel (visible in dev mode only):
 
-- **Login as Jane** — đăng nhập / đăng xuất tài khoản mock
-- **Add Chair to Cart** — thêm sản phẩm vào giỏ hàng
-- **USD / EUR** — chuyển đổi tiền tệ
+- **Login as Jane** — toggle mock customer login/logout
+- **Add Chair to Cart** — add a mock product to the cart
+- **USD / EUR** — switch currency
 
 ---
 
-## Cấu trúc thư mục
+## Project Structure
 
 ```
 src/
-├── main.js                   # App bootstrap (mock zucConfig, không có Laravel/Axios)
-├── router.js                 # Vue Router (không có lang prefix)
+├── main.js                   # App bootstrap (mocks zucConfig, no Laravel/Axios)
+├── router.js                 # Vue Router (no language prefix)
 ├── i18n.js                   # vue-i18n setup
 ├── DevPanel.vue              # Dev-only floating panel
 │
 ├── themes/
-│   └── default/              # Theme files copy từ v3 (KHÔNG sửa trực tiếp ở đây)
+│   └── default/              # Theme files copied from v3 (edit these to design)
 │       ├── Storefront.vue
 │       ├── storefront/       # 41 page components + components/
 │       └── storefront/css/   # style.css (Tailwind v4)
 │
-├── stores/                   # Viết lại toàn bộ — load JSON thay vì gọi API
+├── stores/                   # Fully rewritten — load JSON instead of API calls
 │   ├── settings.js
 │   ├── cart.js
 │   ├── wishlist.js
@@ -91,9 +91,9 @@ src/
 │   ├── utils/{banner,menu,post,contact}.js
 │   └── payments/{cod,bankTransfer}.js
 │
-├── composables/              # Copy từ v3, một số đã patch bỏ axios
-├── locales/en.json           # Copy từ v3
-└── data/                     # Mock data JSON
+├── composables/              # Copied from v3, axios calls patched out
+├── locales/en.json           # Copied from v3
+└── data/                     # Static mock data
     ├── settings.json
     ├── listing.json
     ├── product.json
@@ -108,32 +108,32 @@ src/
 
 ---
 
-## Tạo theme mới
+## Creating a New Theme
 
 1. Copy `src/themes/default/` → `src/themes/my-new-theme/`
-2. Sửa alias `@theme` trong `vite.config.js` trỏ sang theme mới:
+2. Update the `@theme` alias in `vite.config.js` to point to the new theme:
    ```js
    '@theme': fileURLToPath(new URL('./src/themes/my-new-theme', import.meta.url)),
    ```
-3. Edit thoải mái các Vue components
-4. Stores và mock data dùng chung — không cần đụng vào
+3. Edit the Vue components freely
+4. Stores and mock data are shared — no changes needed there
 
 ---
 
-## Mock data
+## Mock Data
 
-Tất cả dữ liệu nằm trong `src/data/*.json`. Sửa trực tiếp để thay đổi nội dung hiển thị (tên store, sản phẩm, banner, menu, bài viết, thông tin tài khoản...).
+All content lives in `src/data/*.json`. Edit these files directly to change what the storefront displays — store name, products, banners, menus, blog posts, account details, etc.
 
-Tài khoản mock mặc định: **jane.smith@example.com** (mật khẩu bất kỳ đều được qua Dev Panel).
+Default mock account: **jane.smith@example.com** (any password works via the Dev Panel).
 
 ---
 
-## Những gì KHÔNG hoạt động (by design)
+## Known Limitations (by design)
 
-Dưới đây render được UI nhưng không có logic thật:
+The following render correctly in the UI but have no real backend logic:
 
-- Thanh toán (Stripe, Square, PayPal) — stub only
-- Newsletter subscription — trả về success
-- Upload ảnh — input file only, không gửi lên server
-- Invoice PDF — render HTML
-- Tra cứu đơn hàng / trả hàng — hiện mock data
+- Payment processing (Stripe, Square, PayPal) — stubs only
+- Newsletter subscription — always returns success
+- Image upload — file input only, nothing is sent to a server
+- Invoice PDF — renders HTML only
+- Order tracking / return & exchange — displays mock data
