@@ -7,7 +7,7 @@ export const usePostStore = defineStore('post', {
         async fetchPosts(params) {
             this.posts = mockPosts.posts || [];
             this.pagination = mockPosts.pagination || {};
-            return mockPosts;
+            return { paginator: { data: this.posts, ...this.pagination } };
         },
         async fetchPostBySlug(slug) {
             return mockPosts.posts[0] || null;

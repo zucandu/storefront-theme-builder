@@ -1,11 +1,12 @@
-{
+﻿{
   "menu": {
     "id": 4,
     "type": "footer-bottom",
     "items": [
-      { "id": 401, "sort": 1, "link_type": "page", "slug": "about-us", "translations": [{ "locale": "en", "label": "About Us" }], "children": [] },
-      { "id": 402, "sort": 2, "link_type": "page", "slug": "privacy-policy", "translations": [{ "locale": "en", "label": "Privacy Policy" }], "children": [] },
-      { "id": 403, "sort": 3, "link_type": "page", "slug": "terms", "translations": [{ "locale": "en", "label": "Terms of Service" }], "children": [] }
+      { "id": 401, "sort": 1, "link_type": "page", "slug": "about-us", "translations": [{ "locale": "en", "title": "About Us" }], "children": [] },
+      { "id": 402, "sort": 2, "link_type": "page", "slug": "privacy-policy", "translations": [{ "locale": "en", "title": "Privacy Policy" }], "children": [] },
+      { "id": 403, "sort": 3, "link_type": "page", "slug": "terms", "translations": [{ "locale": "en", "title": "Terms of Service" }], "children": [] }
     ]
   }
 }
+

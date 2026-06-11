@@ -94,7 +94,12 @@ export const useProductStore = defineStore('product', {
             this.setProductDetails(mockProduct.product);
         },
         async fetchSpotlightProducts() {
-            return mockProduct.spotlight || [];
+            const items = mockProduct.spotlight || [];
+            return {
+                new: items,
+                sale: items.filter(p => +p.sale_price > 0),
+                featured: items,
+            };
         },
         async fetchLatestReviews() {
             return mockProduct.reviews || [];
